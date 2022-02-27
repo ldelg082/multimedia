@@ -1,0 +1,314 @@
+html {
+  background: rgb(241,172,194);
+background: radial-gradient(circle, rgba(241,172,194,1) 0%, rgba(255,255,255,0.9925012241224614) 100%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  background-image: url(headerg.gif);
+}
+
+.giphy-embed {
+  margin-left: 350px;
+  text-align: center;
+}
+
+.gif {
+  padding: 20px;
+  float: left;
+}
+
+.text-ending {
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+#navbar {
+  background: rgb(241,172,194);
+background: radial-gradient(circle, rgba(241,172,194,1) 0%, rgba(255,255,255,0.9925012241224614) 100%);
+}
+
+/* Navbar links */
+#navbar a {
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+button {
+  margin: 15px;
+  margin-left: 80px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 8 */
+.btn-1 {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-1:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1:hover{
+  background: transparent;
+}
+.btn-1 span:hover{
+  color: #c797eb;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-1 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-1 span:hover:before {
+  height: 100%;
+}
+.btn-1 span:hover:after {
+  width: 100%;
+}
+
+/* Page content */
+.content {
+  padding: 15px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+header h1 {
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+header p {
+  position: relative;
+  top: 30%;
+  font-size: 20px;
+  text-align: center;
+}
+
+#downarrow {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 50px);
+}
+
+#downarrow img {
+  width: 100px;
+}
+
+#restofcontent {
+  height: 100vh;
+  padding: 20px 40px;
+  line-height: 25px
+}
+
+
+.wrapper {
+  height: 25vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 135ch;
+  animation: typing 6s steps(50), blink .5s infinite;
+   animation-iteration-count: infinite;
+  white-space:nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+.wrap {
+  margin-top: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  width: 100vw;
+}
+.left, .right {
+  width: 50vw;
+  overflow: hidden;
+  display: inline-block;
+}
+.left {
+  color:pink;
+  transform: skew(0deg, -15deg);
+}
+.right {
+  color: black;
+  transform: skew(0deg, 15deg);
+}
+.left .content {
+  width: 100vw;
+  text-align: center;
+}
+.right .content {
+  width: 100vw;
+  text-align: center;
+  transform: translate(-50vw);
+}
+span {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: .5;
+  transition: ease-out .6s;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: 250px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin-left: 500px;
+  font-family: 'Montserrat', sans-serif;
+}
